@@ -3,17 +3,17 @@ For example, given [1, 7, 3, 4]
 your function should return: [84,    12,    28,    21   ]
 by calculating:              [7*3*4, 1*3*4, 1*7*4, 1*7*3]
 '''
-def product_of_all_other_numbers(arr):
-    finalProduct = 1
-    finalArr = []
+def product_of_all_other_numbers(arr):          # function definition
+    finalProduct = 1                            # finalProduct variable initialized to 1
+    finalArr = []                               # finalArr array initialized
 
-    for el in arr:
-        finalProduct *= el
+    for el in arr:                              # for each element in the received array
+        finalProduct *= el                      # finalProduct is the finalProduct multiplied by the value of the element
 
-    for eaEl in arr:
-        finalArr.append(finalProduct // eaEl)
+    for eaEl in arr:                            # for each element in the received array
+        finalArr.append(finalProduct // eaEl)   # append to the finalArr the total multiplied product divided by the value of the current element
 
-    return finalArr
+    return finalArr                             # return the final array
 
 
 if __name__ == '__main__':
